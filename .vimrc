@@ -879,6 +879,7 @@ endif
 
 :if filereadable($HOME.'/.vim/plugin/vimwiki.vim') || filereadable($HOME.'/.vim/bundle/vimwiki/plugin/vimwiki.vim')
 	:autocmd BufNewFile,BufRead *.wiki set tabstop=2
+	:autocmd BufNewFile,BufRead *.wiki set softtabstop=2
 	:autocmd BufNewFile,BufRead *.wiki set foldlevel=1
 	:map <leader>tt <Plug>VimwikiToggleListItem
 
