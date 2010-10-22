@@ -165,7 +165,7 @@ set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·,extends:»,precedes:«
 		"   will find appropriate wide font for us.
 		":set         guifontwide=MingLiU\ 12
 	:elseif has("gui_mac") || has("gui_macvim")
-"		:set         guifont=Monaco\ 13
+		:set         guifont=Monaco:h13
 	:elseif has("gui_win32")
 		:set         guifont=Consolas:h11:cANSI
 "		:set         guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
