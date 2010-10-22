@@ -138,7 +138,8 @@ set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·,extends:»,precedes:«
 :set lazyredraw                  " don't update the display while executing macros
 :set laststatus=2                " tell VIM to always put a status line in, even
                                  "    if there is only one window
-:set cmdheight=2                 " use a status bar that is 2 rows high
+"set cmdheight=2                 " use a status bar that is 2 rows high
+:set cmdheight=1
 "set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 :set statusline=%<%f\ %m%=\ %h%r\ %-19([%p%%]\ %3l,%02c%03V%)%y
 
