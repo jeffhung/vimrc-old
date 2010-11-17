@@ -27,6 +27,10 @@
 :let ctags_opts = '--c-kinds=+lpx --c++-kinds=+lpx --fields=+ailmS --extra=+fq --exclude=.svn --exclude=CVS'
 :if (executable('exctags'))
 	:let ctags_cmd = 'exctags'
+:elseif (executable('/usr/local/bin/ctags')) " *BSD, HomeBrew
+	:let ctags_cmd = '/usr/local/bin/ctags'
+:elseif (executable('/opt/local/bin/ctags')) " MacPorts
+	:let ctags_cmd = '/opt/local/bin/ctags'
 :elseif (executable('ctags'))
 	" - We may get trouble if ctags is not exuberant-ctags.
 	:let ctags_cmd = 'ctags'
@@ -72,7 +76,8 @@ set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·,extends:»,precedes:«
 :set pastetoggle=<F2>            " when in insert mode, press <F2> to go to
                                  "    paste mode, where you can paste mass data
                                  "    that won't be autoindented
-:set mouse=a                     " enable using the mouse if terminal emulator
+" jeffhung.20101101: Mouse is anonying in terminal.
+"set mouse=a                     " enable using the mouse if terminal emulator
                                  "    supports it (xterm does)
 "set fileformats="unix,dos,mac"
 
@@ -784,8 +789,8 @@ endif
 	:augroup javascript_files "{{{
 		:au!
 
-		:autocmd filetype javascript setlocal expandtab
-		:autocmd filetype javascript setlocal listchars=trail:·,extends:#,nbsp:·
+"		:autocmd filetype javascript setlocal expandtab
+"		:autocmd filetype javascript setlocal listchars=trail:·,extends:#,nbsp:·
 		:autocmd filetype javascript setlocal foldmethod=marker foldmarker={,}
 	:augroup end "}}}
 
