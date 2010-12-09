@@ -1,3 +1,6 @@
 [submodule ".vim/bundle/taglist"]
 	path = .vim/bundle/taglist
 	url = http://github.com/vim-scripts/taglist.vim.git
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
+	url = http://github.com/hallison/vim-markdown.git
