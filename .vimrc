@@ -922,6 +922,12 @@ endif
 	" Ending symbol for g:vimwiki_html_header_numbering.
 	:let g:vimwiki_html_header_numbering = '.'
 
+	:if filereadable($HOME.'/.vim/plugin/taglist.vim') || filereadable($HOME.'/.vim/bundle/taglist/plugin/taglist.vim')
+		" jeffhung.20110130: Add vimwiki toc support (for Tlist)
+		" See http://code.google.com/p/vimwiki/wiki/TagList4Vimwiki
+		:let tlist_vimwiki_settings = 'wiki;h:Headers'
+	:endif
+
 	"
 	" The "main" wiki
 	"
