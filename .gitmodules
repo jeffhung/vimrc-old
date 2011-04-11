@@ -4,3 +4,6 @@
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = http://github.com/hallison/vim-markdown.git
+[submodule ".vim/bundle/comments.vim"]
+	path = .vim/bundle/comments.vim
+	url = https://github.com/vim-scripts/comments.vim.git
