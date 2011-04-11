@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/comments.vim"]
 	path = .vim/bundle/comments.vim
 	url = https://github.com/vim-scripts/comments.vim.git
+[submodule ".vim/bundle/fugitive"]
+	path = .vim/bundle/fugitive
+	url = https://github.com/vim-scripts/fugitive.vim.git
