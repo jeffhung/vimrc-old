@@ -10,3 +10,6 @@
 [submodule ".vim/bundle/fugitive"]
 	path = .vim/bundle/fugitive
 	url = https://github.com/vim-scripts/fugitive.vim.git
+[submodule ".vim/bundle/VST"]
+	path = .vim/bundle/VST
+	url = https://github.com/vim-scripts/VST.git
