@@ -913,6 +913,9 @@ endif
 "	" Fold only one empty line. The rest empty lines are unfolded.
 "	:let g:vimwiki_fold_trailing_empty_lines = 1
 
+	" Turn on/off table auto-formatting. (default: 1)
+	:let g:vimwiki_table_auto_fmt = 1
+
 	" Use special method to calculate correct length of the strings with double
 	" wide characters. (To align table cells properly)
 	:let g:vimwiki_CJK_length      = 1
@@ -938,9 +941,19 @@ endif
 	:let wiki_main.auto_export     = 1
 	:let wiki_main.html_header     = '~/Dropbox/vimwiki/html/header.tpl'
 	:let wiki_main.html_footer     = '~/Dropbox/vimwiki/html/footer.tpl'
-"	:let wiki_main.nested_syntaxes = {'python': 'python', 'c++': 'cpp' }
-"	:let wiki_main.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'sql': 'sql' }
 	:let wiki_main.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'sql': 'sql', 'java': 'java' }
+
+	"
+	" The "ecap" wiki
+	"
+
+	:let wiki_ecap                 = {}
+	:let wiki_ecap.path            = '~/Dropbox/ecap-wiki/data/'
+	:let wiki_ecap.path_html       = '~/Dropbox/ecap-wiki/html/'
+	:let wiki_ecap.auto_export     = 1
+	:let wiki_ecap.html_header     = '~/Dropbox/ecap-wiki/html/header.tpl'
+	:let wiki_ecap.html_footer     = '~/Dropbox/ecap-wiki/html/footer.tpl'
+	:let wiki_ecap.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'sql': 'sql', 'java': 'java' }
 
 	"
 	" The "coretech" wiki
@@ -953,12 +966,10 @@ endif
 "	:let wiki_coretech.auto_export     = 1
 	:let wiki_coretech.html_header     = '~/Dropbox/coretech-wiki/html/header.tpl'
 	:let wiki_coretech.html_footer     = '~/Dropbox/coretech-wiki/html/footer.tpl'
-"	:let wiki_coretech.nested_syntaxes = {'python': 'python', 'c++': 'cpp' }
-"	:let wiki_coretech.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'sql': 'sql' }
 	:let wiki_coretech.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'sql': 'sql', 'java': 'java' }
 
 	" Register all wiki
-	:let g:vimwiki_list = [ wiki_main, wiki_coretech ]
+	:let g:vimwiki_list = [ wiki_main, wiki_ecap, wiki_coretech ]
 :endif
 
 " }}}
