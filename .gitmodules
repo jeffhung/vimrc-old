@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/wikipedia"]
 	path = .vim/bundle/wikipedia
 	url = https://github.com/vim-scripts/wikipedia.vim.git
+[submodule ".vim/bundle/vimwiki"]
+	path = .vim/bundle/vimwiki
+	url = https://github.com/vim-scripts/vimwiki.git
