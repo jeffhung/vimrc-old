@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/vim-rooter"]
 	path = .vim/bundle/vim-rooter
 	url = https://github.com/airblade/vim-rooter.git
+[submodule "PeepOpen-EditorSupport"]
+	path = PeepOpen-EditorSupport
+	url = https://github.com/topfunky/PeepOpen-EditorSupport.git
