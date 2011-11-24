@@ -1030,6 +1030,24 @@ endif
 
 "}}}
 
+" vim-rooter: Changes Vim working directory to project root {{{
+" (identified by presence of DVCS directory)
+
+" To add a file extension, e.g. foo:
+":autocmd rooter BufEnter *.foo :Rooter
+
+" To remove a file extension, e.g. js:
+":autocmd! rooter BufEnter *.js
+
+" To remove all the file extensions so vim-rooter doesn't change directory automatically at all:
+":autocmd! rooter
+
+" Finally you can have vim-rooter locally change directory (:lcd) instead of
+" changing directory (:cd):
+":let g:rooter_use_lcd = 1
+
+" }}}
+
 " a.vim: Alternate Files quickly (.c --> .h etc) {{{
 " (http://www.vim.org/scripts/script.php?script_id=31)
 " A few of quick commands to swtich between source files and header files quickly.
