@@ -946,6 +946,18 @@ endif
 	:let wiki_main.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'sql': 'sql', 'java': 'java' }
 
 	"
+	" The "blog" wiki
+	"
+
+	:let wiki_blog                 = {}
+	:let wiki_blog.path            = '~/Dropbox/blog-wiki/data/'
+	:let wiki_blog.path_html       = '~/Dropbox/blog-wiki/html/'
+	:let wiki_blog.auto_export     = 1
+	:let wiki_blog.html_header     = '~/Dropbox/blog-wiki/html/header.tpl'
+	:let wiki_blog.html_footer     = '~/Dropbox/blog-wiki/html/footer.tpl'
+	:let wiki_blog.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'sql': 'sql', 'java': 'java' }
+
+	"
 	" The "ecap" wiki
 	"
 
@@ -957,21 +969,8 @@ endif
 	:let wiki_ecap.html_footer     = '~/Dropbox/ecap-wiki/html/footer.tpl'
 	:let wiki_ecap.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'sql': 'sql', 'java': 'java' }
 
-	"
-	" The "coretech" wiki
-	"
-
-	:let wiki_coretech                 = {}
-	:let wiki_coretech.syntax          = 'media'
-	:let wiki_coretech.path            = '~/Dropbox/coretech-wiki/data/'
-	:let wiki_coretech.path_html       = '~/Dropbox/coretech-wiki/html/'
-"	:let wiki_coretech.auto_export     = 1
-	:let wiki_coretech.html_header     = '~/Dropbox/coretech-wiki/html/header.tpl'
-	:let wiki_coretech.html_footer     = '~/Dropbox/coretech-wiki/html/footer.tpl'
-	:let wiki_coretech.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'sql': 'sql', 'java': 'java' }
-
 	" Register all wiki
-	:let g:vimwiki_list = [ wiki_main, wiki_ecap, wiki_coretech ]
+	:let g:vimwiki_list = [ wiki_main, wiki_blog, wiki_ecap ]
 :endif
 
 " }}}
