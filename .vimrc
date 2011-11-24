@@ -884,9 +884,10 @@ endif
 " vimwiki (http://code.google.com/p/vimwiki) {{{
 
 :if filereadable($HOME.'/.vim/plugin/vimwiki.vim') || filereadable($HOME.'/.vim/bundle/vimwiki/plugin/vimwiki.vim')
-	:autocmd BufNewFile,BufRead *.wiki set tabstop=2
-	:autocmd BufNewFile,BufRead *.wiki set softtabstop=2
-	:autocmd BufNewFile,BufRead *.wiki set foldlevel=1
+	:autocmd BufNewFile,BufRead *.wiki setlocal tabstop=2
+	:autocmd BufNewFile,BufRead *.wiki setlocal softtabstop=2
+	:autocmd BufNewFile,BufRead *.wiki setlocal foldlevel=1
+	:autocmd BufNewFile,BufRead *.wiki setlocal nolist
 	:map <leader>tt <Plug>VimwikiToggleListItem
 
 	"
