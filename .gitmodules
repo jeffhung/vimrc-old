@@ -20,5 +20,5 @@
 	path = .vim/bundle/vimwiki
 	url = https://github.com/vim-scripts/vimwiki.git
 [submodule ".vim/bundle/vim-rooter"]
-	path = .vim/bundle/vim-rooter
+	path = .vim/bundle.disabled/vim-rooter
 	url = https://github.com/airblade/vim-rooter.git
