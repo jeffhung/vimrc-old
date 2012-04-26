@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/vim-rooter"]
 	path = .vim/bundle.disabled/vim-rooter
 	url = https://github.com/airblade/vim-rooter.git
+[submodule ".vim/bundle/netrw"]
+	path = .vim/bundle/netrw
+	url = https://github.com/vim-scripts/netrw.vim.git
